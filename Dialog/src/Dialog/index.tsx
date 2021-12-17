@@ -31,7 +31,7 @@ export function Dialog({ config, offset=0, show= true }: DialogProps): JSX.Eleme
         <React.Fragment>
         { !show? undefined
             :<div className={"fck-dialog"}>
-                <div className="fck-dialog-content" style={{ marginTop: 64 + (offset)*16 }}>
+                <div className="fck-dialog-content" style={{ marginTop: 64 + (offset)*8 }}>
                     <div className="fck-dialog-header">
                         { icon && <span> {icon}</span>} 
                         { title && <span>{title}</span>}
