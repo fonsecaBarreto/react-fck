@@ -1,0 +1,106 @@
+.notify-dialog, .options-dialog{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 16px ;
+    max-width: 500px;
+    gap: 16px;
+}
+
+.notify-dialog .notify-d-icon > :nth-child(1){
+   width: auto; height: 64px;
+   animation-duration: 1s;
+   animation-play-state: paused;
+   animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+   object-fit: contain;  margin: auto;
+}
+
+.notify-dialog .notify-d-content-body{ 
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   text-align: center; margin: auto;
+   font-size: 18px;  line-height: 1em;
+}
+
+.notify-dialog .notify-d-content-body > span:nth-child(1){ 
+   font-size: 20px;
+   margin-bottom: 4px;
+   font-weight: bold;
+}
+
+.notify-dialog .notify-d-content-body > span:nth-child(3){ 
+   font-size: 16px;
+   color: #444;
+}
+
+.notify-dialog .notify-d-btns {
+    width: 100%; margin: auto auto 0;
+    gap: 10px;
+    display: flex; flex-direction: row;  align-items: center;
+}
+
+.notify-d-btns button{
+    margin-top: 10px;
+    position: relative;
+    width: fit-content; height: 38px;
+    padding: 0 64px;
+    margin: auto;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background: rgb(53, 94, 156);
+    color: white!important;
+    width: 100%;
+}
+.notify-d-btns button:hover{
+   outline: solid 2px rgba(44, 86, 148, 0.404) ;
+}
+
+.notify-d-btns button:nth-child(2){
+   background-color: rgb(161, 33, 33);
+}
+
+
+ /* OPTIONS  */
+
+ .options-dialog{
+    gap: 10px;
+}
+
+.options-dialog button{
+    position: relative;
+    width: 100%; height: 46px;
+    font-size: 18px;  line-height: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background:#ececec;
+    border: solid 1px #ddd;
+    color: #222;
+}
+
+.options-dialog button:hover{
+    background:#f6f6f6;
+    color: #111;
+}
+
+.options-dialog button:active{
+    background:#f6f6f6;
+    box-shadow:inset 0px 0px 5px 2px #0001;
+    transition: all .025s;
+}
+
+@media screen and (max-width: 756px) {
+    .options-dialog{
+        max-width: unset;
+     }
+     
+}

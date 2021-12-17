@@ -1,0 +1,1 @@
+{"version":3,"file":"MakeOptions.d.ts","sourceRoot":"","sources":["../../src/presentation/MakeOptions.tsx"],"names":[],"mappings":"AACA,OAAO,aAAa,CAAA;AACpB,OAAO,EAAoB,gBAAgB,EAAE,MAAM,WAAW,CAAA;AAE9D,MAAM,WAAW,OAAO;IACpB,KAAK,EAAE,MAAM,CAAC;CACjB;AAED,wBAAgB,WAAW,CAAE,QAAQ,EAAE,gBAAgB,EAAE,OAAO,GAAC,OAAO,EAAM,EAAE,KAAK,GAAC,MAAgB,oCAQrG;AAED,eAAe,WAAW,CAAA"}
