@@ -18,3 +18,6 @@ body {
 .app-examples button{
     padding: 6px 10px;
 }
+.b-container{
+    background-color: #444;
+}

@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react';
-export function useWindowSize() {
-    var _a = useState({ width: 0, height: 0 }), windowSize = _a[0], setWindowSize = _a[1];
-    useEffect(function () {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.useWindowSize = void 0;
+var react_1 = require("react");
+function useWindowSize() {
+    var _a = (0, react_1.useState)({ width: 0, height: 0, }), windowSize = _a[0], setWindowSize = _a[1];
+    (0, react_1.useEffect)(function () {
         function handleResize() {
             setWindowSize({
                 width: window.innerWidth,
@@ -14,4 +17,6 @@ export function useWindowSize() {
     }, []);
     return windowSize;
 }
+exports.useWindowSize = useWindowSize;
+exports.default = useWindowSize;
 //# sourceMappingURL=useWindowSize.js.map

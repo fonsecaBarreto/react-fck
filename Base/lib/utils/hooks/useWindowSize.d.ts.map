@@ -1,1 +1,1 @@
-{"version":3,"file":"useWindowSize.d.ts","sourceRoot":"","sources":["../../../src/utils/hooks/useWindowSize.tsx"],"names":[],"mappings":"AAEA,oBAAY,UAAU,GAAG;IACrB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,MAAM,CAAA;CACjB,CAAA;AAGD,wBAAgB,aAAa,eAc5B"}
+{"version":3,"file":"useWindowSize.d.ts","sourceRoot":"","sources":["../../../src/utils/hooks/useWindowSize.tsx"],"names":[],"mappings":"AAEA,oBAAY,UAAU,GAAG;IACrB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,MAAM,CAAA;CACjB,CAAA;AAED,wBAAgB,aAAa,eAc5B;AAED,eAAe,aAAa,CAAA"}

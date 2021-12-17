@@ -3,4 +3,5 @@ export declare type WindowSize = {
     height: number;
 };
 export declare function useWindowSize(): WindowSize;
+export default useWindowSize;
 //# sourceMappingURL=useWindowSize.d.ts.map

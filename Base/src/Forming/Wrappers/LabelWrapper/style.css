@@ -1,0 +1,22 @@
+
+.label-wrapper{
+     font-size: 15px;
+     width: 100%;
+     line-height: 15px;
+     white-space: normal;
+     text-align: left;
+     max-height: 30px;
+     display: block; 
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     width: fit-content;
+}
+
+
+.label-wrapper > span:nth-child(1){
+     font-weight: bold;
+     margin-right: 6px;
+}
