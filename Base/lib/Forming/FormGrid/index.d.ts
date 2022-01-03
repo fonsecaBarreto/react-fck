@@ -1,13 +1,21 @@
 import React from "react";
 import './style.css';
+export declare type ColumnConfig = {
+    sm: number;
+    lg: number;
+};
 export declare namespace FormGrid {
     type Params = {
         title?: string;
         children: React.ReactNode;
-        freeze: boolean;
-        columns: number[];
+        columns: {
+            sm: number;
+            lg: number;
+        }[] | number[];
+        freeze?: boolean;
+        icon?: React.ReactNode;
     };
 }
-export declare const FormPanel: React.FunctionComponent<FormGrid.Params>;
-export default FormPanel;
+export declare const FormGrid: React.FunctionComponent<FormGrid.Params>;
+export default FormGrid;
 //# sourceMappingURL=index.d.ts.map

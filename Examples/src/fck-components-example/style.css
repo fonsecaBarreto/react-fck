@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(236, 252, 255);
+}
+
+.app-examples{
+    gap: 10px;
+    padding: 4px 8px;
+}
+
+.app-examples nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.app-examples button{
+    padding: 6px 10px;
+}
+
+.b-container{
+    background-color: #444;
+}
+
+.fck-examples > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}

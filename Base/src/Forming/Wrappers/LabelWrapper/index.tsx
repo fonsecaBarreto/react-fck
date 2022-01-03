@@ -8,7 +8,7 @@ export namespace LabelWrapper {
     }
 }
 
-const LabelWrapper: React.FunctionComponent<LabelWrapper.Params> = ({label, children}) =>{
+export const LabelWrapper: React.FunctionComponent<LabelWrapper.Params> = ({label, children}) =>{
      return (
           <div className="label-wrapper">
                <span>{label}:</span> {children}

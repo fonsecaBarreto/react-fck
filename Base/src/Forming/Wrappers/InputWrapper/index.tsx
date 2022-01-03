@@ -6,13 +6,14 @@ export namespace InputWrapper {
         children: React.ReactNode, 
         label:string, 
         error?:string, 
-        className?:string
+        className?:string,
+        w100?: boolean
     }
 }
 
-const InputWrapper: React.FunctionComponent<InputWrapper.Params> = ({children, label, error, className})=> {
+export const InputWrapper: React.FunctionComponent<InputWrapper.Params> = ({children, label, error, className, w100=true })=> {
     return (
-    <div className={`input-wrapper ${className} ${error ? "warning" : ''}`}>
+    <div className={`input-wrapper ${error ? "warning" : ''} ${w100 ? "w100": ""} ${className} `}>
         <label>{label}</label>
         {children}
         {error && <span className="form-error">

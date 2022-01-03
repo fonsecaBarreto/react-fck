@@ -1,6 +1,7 @@
 import React, { useState } from "react"
+import { StateAdapter } from './protocols'
 
-export const StateAdapter = ( initial_data: Record<string, any> ) =>{
+export const UseStateAdapter =( initial_data: Record<string, any> ): StateAdapter.Handler =>{
  
     const [ data, setData ] = useState<Record<string, any>>({ ...initial_data })
     const [ errors, setErrors ]= useState<Record<string, any>>({ })
@@ -28,4 +29,4 @@ export const StateAdapter = ( initial_data: Record<string, any> ) =>{
  
 }
 
-export default StateAdapter
+export default UseStateAdapter

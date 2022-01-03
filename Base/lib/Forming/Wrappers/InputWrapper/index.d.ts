@@ -6,8 +6,9 @@ export declare namespace InputWrapper {
         label: string;
         error?: string;
         className?: string;
+        w100?: boolean;
     };
 }
-declare const InputWrapper: React.FunctionComponent<InputWrapper.Params>;
+export declare const InputWrapper: React.FunctionComponent<InputWrapper.Params>;
 export default InputWrapper;
 //# sourceMappingURL=index.d.ts.map

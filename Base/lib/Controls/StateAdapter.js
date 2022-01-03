@@ -11,9 +11,9 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.StateAdapter = void 0;
+exports.UseStateAdapter = void 0;
 var react_1 = require("react");
-var StateAdapter = function (initial_data) {
+var UseStateAdapter = function (initial_data) {
     var _a = (0, react_1.useState)(__assign({}, initial_data)), data = _a[0], setData = _a[1];
     var _b = (0, react_1.useState)({}), errors = _b[0], setErrors = _b[1];
     var _c = (0, react_1.useState)(false), loading = _c[0], setLoading = _c[1];
@@ -41,6 +41,6 @@ var StateAdapter = function (initial_data) {
         },
     };
 };
-exports.StateAdapter = StateAdapter;
-exports.default = exports.StateAdapter;
+exports.UseStateAdapter = UseStateAdapter;
+exports.default = exports.UseStateAdapter;
 //# sourceMappingURL=StateAdapter.js.map

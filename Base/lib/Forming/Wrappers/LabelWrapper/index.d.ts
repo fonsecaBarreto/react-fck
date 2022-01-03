@@ -6,6 +6,6 @@ export declare namespace LabelWrapper {
         label: string;
     };
 }
-declare const LabelWrapper: React.FunctionComponent<LabelWrapper.Params>;
+export declare const LabelWrapper: React.FunctionComponent<LabelWrapper.Params>;
 export default LabelWrapper;
 //# sourceMappingURL=index.d.ts.map

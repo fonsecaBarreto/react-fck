@@ -1,1 +1,1 @@
-{"version":3,"file":"StateAdapter.d.ts","sourceRoot":"","sources":["../../src/Controls/StateAdapter.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAmB,MAAM,OAAO,CAAA;AAEvC,eAAO,MAAM,YAAY,iBAAmB,OAAO,MAAM,EAAE,GAAG,CAAC;;;;uBAMrC,MAAM,SAAS,MAAM,YAAU,OAAO;;;;;;;;;;;;CAoB/D,CAAA;AAED,eAAe,YAAY,CAAA"}
+{"version":3,"file":"StateAdapter.d.ts","sourceRoot":"","sources":["../../src/Controls/StateAdapter.tsx"],"names":[],"mappings":"AACA,OAAO,EAAE,YAAY,EAAE,MAAM,aAAa,CAAA;AAE1C,eAAO,MAAM,eAAe,iBAAkB,OAAO,MAAM,EAAE,GAAG,CAAC,KAAI,aAAa,OA0BjF,CAAA;AAED,eAAe,eAAe,CAAA"}
