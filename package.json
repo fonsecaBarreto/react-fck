@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "fck-components": "^1.0.2"
+  },
+  "devDependencies": {
+    "style-loader": "^3.3.1"
+  }
+}
