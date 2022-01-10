@@ -10,6 +10,7 @@ export declare enum TextBoxTypes {
 export declare namespace TextBox {
     interface Params extends FCKControls.Params {
         type: TextBoxTypes;
+        mask?: string;
     }
 }
 export declare const TextBox: React.FunctionComponent<TextBox.Params>;

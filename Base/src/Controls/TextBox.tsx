@@ -2,15 +2,17 @@ import React from "react";
 import { ChangeEvent, useEffect, useState } from "react"
 import InputWrapper from '../Forming/Wrappers/InputWrapper'
 import { FCKControls } from './protocols'
+import InputMask from 'react-input-mask';
 
 export enum TextBoxTypes { TEXT="text", VIEW="view", TEXTAREA="textarea",  NUMBER="number", PASSWORD="password" } 
 export namespace TextBox {
     export interface Params extends FCKControls.Params {
-        type: TextBoxTypes
+        type: TextBoxTypes,
+        mask?: string
     }
 }
 
-export const TextBox: React.FunctionComponent<TextBox.Params> = ({ name, label, type, placeHolder, state, className }) =>{
+export const TextBox: React.FunctionComponent<TextBox.Params> = ({ name, label, type, placeHolder, state, className, mask }) =>{
     return (
         <InputWrapper label={label ?? name} error={state.errors.get[name]} className={className}>
             
@@ -24,10 +26,12 @@ export const TextBox: React.FunctionComponent<TextBox.Params> = ({ name, label, 
             : type == TextBoxTypes.VIEW ?
                 <input disabled={true} type={'text'} value={ state.data.get?.[name] ?? "" } ></input>
             :
-            <input 
-                type={type} placeholder={placeHolder ?? ''} value={state.data.get?.[name] ?? ""}  
-                onInput={ ( e:ChangeEvent<HTMLInputElement> ) => state.data.onInput(name, e.target.value) } >
-            </input>
+                mask ? 
+                <InputMask className="custom-input" type={'text'} placeholder={placeHolder ?? ''} mask={mask} value={state.data.get?.[name] ?? ""} 
+                    onInput={ ( e:ChangeEvent<HTMLInputElement> ) => state.data.onInput(name, e.target.value) }/>
+                :
+                <input type={type} placeholder={placeHolder ?? ''} value={state.data.get?.[name] ?? ""}  
+                onInput={ ( e:ChangeEvent<HTMLInputElement> ) => state.data.onInput(name, e.target.value) }></input>
             }
         </InputWrapper>
     )
