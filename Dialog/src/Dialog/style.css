@@ -6,36 +6,41 @@
 }
 
 .fck-dialog {
-    box-sizing: border-box!important;
+    box-sizing: border-box;
     width: 100vw; height: 100vh;
-    position: fixed; top: 0;  left: 0;
-    background: rgba(0, 0, 0, 0.08);
-    display: flex; flex-direction: column; align-items: center;
-    padding: 0 16px; z-index: 999999; overflow: auto;
+    position: fixed; top: 0; left: 0;
+    background-color: rgba(0, 16, 39, 0.3)!important;
+    overflow-y: auto!important;
+    z-index: 9999; overflow: auto;
+}
+
+.fck-dialog .fck-dialog-float-container{
+    box-sizing: border-box;
+    position: absolute; top: 0; left: 0; right: 0; margin: auto;
+    display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
+    width: fit-content; height: fit-content;
+    padding: 64px 12px;
 }
 
 .fck-dialog .fck-dialog-content{
-    position: relative;
-    min-width: 260px; min-height: 200px;
     display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
+    min-width: 260px; min-height: 200px;
     background-color: white;
-    box-shadow: 0px 4px 6px #0002;
-    width: fit-content; height: fit-content;
+    box-shadow: 0px 4px 6px 2px #0006;
     border-radius: 4px;
-    height: fit-content;
+    /* animation */
     animation-name: showup;
     animation-duration: .25s;
     animation-timing-function: ease;
-    margin-top: 72px;
-    overflow: hidden;
 }
 
+/* Header */
 .fck-dialog .fck-dialog-content > .fck-dialog-header{
     box-sizing: border-box;
     display: flex; justify-content: flex-start; align-items: center; flex-direction: row;
     width: 100%; 
     padding: 8px 8px 8px 16px;
-    font-size: 18px;
+    font-size: 16px;
     column-gap: 8px;
     border-bottom: solid 1px #ddd;
 } 
@@ -53,6 +58,11 @@
 }
 
 @media only screen and (max-width:960px){
+
+    .fck-dialog .fck-dialog-float-container {
+        width: 100%;
+    }
+
     .fck-dialog .fck-dialog-content{
         min-width: fit-content;
         min-height: fit-content;

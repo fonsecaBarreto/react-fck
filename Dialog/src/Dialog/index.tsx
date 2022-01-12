@@ -31,16 +31,18 @@ export function Dialog({ config, offset=0, show= true }: DialogProps): JSX.Eleme
         <React.Fragment>
         { !show? undefined
             :<div className={"fck-dialog"}>
-                <div className="fck-dialog-content" style={{ marginTop: 64 + (offset)*8 }}>
-                    <div className="fck-dialog-header">
-                        { icon && <span> {icon}</span>} 
-                        { title && <span>{title}</span>}
+                <div className='fck-dialog-float-container'>
+                    <div className="fck-dialog-content">
+                        <div className="fck-dialog-header">
+                            { icon && <span> {icon}</span>} 
+                            { title && <span>{title}</span>}
                             <button onClick={() => onAction(-1)} className="adc-close"> 
                                 <FaTimes> </FaTimes>
                             </button>
-                    </div>
-                    <div className={`fck-dialog-body ${loading ?' div-loading' : ''}`}>
-                       <Content onAction={onAction} ></Content>
+                        </div>
+                        <div className={`fck-dialog-body ${loading ?' div-loading' : ''}`}>
+                        <Content onAction={onAction} ></Content>
+                        </div> 
                     </div> 
                 </div>
             </div>
