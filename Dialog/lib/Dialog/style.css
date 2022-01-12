@@ -10,7 +10,6 @@
     width: 100vw; height: 100vh;
     position: fixed; top: 0; left: 0;
     background-color: rgba(0, 16, 39, 0.3)!important;
-    border: solid 5px #0002;
     overflow-y: auto!important;
     z-index: 9999; overflow: auto;
 }
@@ -27,7 +26,7 @@
     display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
     min-width: 260px; min-height: 200px;
     background-color: white;
-    box-shadow: 0px 4px 6px 2px #0008;
+    box-shadow: 0px 4px 6px 2px #0006;
     border-radius: 4px;
     /* animation */
     animation-name: showup;

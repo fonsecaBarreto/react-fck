@@ -44,28 +44,38 @@
     display: flex; flex-direction: row;  align-items: center;
 }
 
+/* Botao notificação */
+
 .notify-d-btns button{
-    margin-top: 10px;
     position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background:#ececec;
+    border: solid 1px #ddd;
+    color: #222;
+    margin-top: 10px;
     width: fit-content; height: 38px;
     padding: 0 64px;
     margin: auto;
     font-size: 16px;
     border-radius: 4px;
-    cursor: pointer;
-    z-index: 1;
     border: none;
-    background: rgb(53, 94, 156);
-    color: white!important;
-    width: 100%;
-}
-.notify-d-btns button:hover{
-   outline: solid 2px rgba(44, 86, 148, 0.404) ;
 }
 
-.notify-d-btns button:nth-child(2){
-   background-color: rgb(161, 33, 33);
+.notify-d-btns button:hover{
+    background:#f6f6f6;
+    color: #111;
 }
+
+.notify-d-btns button:active{
+    background:#f6f6f6;
+    box-shadow:inset 0px 0px 5px 2px #0001;
+    transition: all .025s;
+}
+
+
 
 
  /* OPTIONS  */
